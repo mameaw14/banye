@@ -1,0 +1,19 @@
+body{
+	text-align:center;
+}
+.s {
+	text-align: center;
+	font-size: 100pt;
+	font-family: "Helvetica";
+	text-shadow: 0px -1px 1px silver;
+	
+}
+.t{
+	font-size: 25pt;
+	font-family: "Helvetica";
+	text-shadow: 0px -1px 1px silver;
+	padding-left:20px;	
+	padding-right:20px;
+	position:relative;
+	display:inline-block;
+}

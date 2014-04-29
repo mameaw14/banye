@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html ng-app>
+<head>
+	<title>Countdown</title>
+	<link href="cd.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+	<script type="text/JavaScript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0-beta.6/angular.min.js"/>
+	<script src="countdown.js"></script>
+		<p class="t">Hello {{Name}}{{number*14/100}}</p>
+		<br>
+		<p>
+		<div class="t"><span class = "s" id = "toicd"></span><br>before TOI10-ubu</div>
+		<div class="t"><span class = "s" id = "demo"></span><br>before next term</div>
+		</p>		
+		
+		<input class="t" type="text" ng-model="Name" ng-init="Name='Mameaw'"/>
+		<input class="t" type="number" ng-model="number" ng-init="number=14"/>
+	<script src="countdown.js"></script>
+	<script>
+		var timespan = countdown(new Date(),new Date(2014,4,18),countdown.DAYS).toString();
+		var toi = countdown(new Date(),new Date(2014,4,6),countdown.DAYS).toString();
+		document.getElementById("demo").innerHTML = timespan;
+		document.getElementById("toicd").innerHTML = toi;
+	</script>
+</body>
+</html>
